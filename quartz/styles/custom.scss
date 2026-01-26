@@ -22,8 +22,6 @@ blockquote {
 }
 
 code {
-  background: var(--bg5);
-
   > span {
     padding: 3px 10px !important;
 
@@ -31,6 +29,10 @@ code {
       display: none !important;
     }
   }
+}
+
+:not(pre) > code {
+  background: var(--bg5);
 }
 
 :not(strong) {
