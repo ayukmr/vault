@@ -1,5 +1,12 @@
 @use "./base.scss";
 
+@font-face {
+  font-family: 'Libre Caslon Condensed';
+  src: url('/static/LibreCaslonCondensed.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 a {
   text-decoration: none !important;
 }
