@@ -14,10 +14,6 @@ export default (() => {
     const titleSuffix = cfg.pageTitleSuffix ?? ""
     const title =
       (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
-    const description =
-      fileData.frontmatter?.socialDescription ??
-      fileData.frontmatter?.description ??
-      unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
 
     const { css, js, additionalHead } = externalResources
 
@@ -29,7 +25,7 @@ export default (() => {
     return (
       <head>
         <title>{title}</title>
-        <meta charSet="utf-8" />
+        <meta charset="utf-8" />
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,8 +39,6 @@ export default (() => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="icon" href={iconPath} />
-        <meta name="description" content={description} />
-        <meta name="generator" content="Quartz" />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         <link rel="stylesheet" href="https://raven.ayukmr.com/raven.css" />
