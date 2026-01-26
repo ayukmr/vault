@@ -1,3 +1,112 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+a {
+  text-decoration: none !important;
+}
+
+img {
+  display: block;
+}
+
+blockquote {
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+code {
+  background: var(--bg5);
+
+  > span {
+    padding: 3px 10px !important;
+
+    &::before {
+      display: none !important;
+    }
+  }
+}
+
+:not(strong) {
+  font-weight: normal !important;
+}
+
+a.internal.tag-link {
+  background: var(--bg4);
+}
+
+button.toc-header,
+button.mobile-explorer,
+button.desktop-explorer {
+  background: transparent !important;
+}
+
+input[type="checkbox"] {
+  border-style: solid !important;
+
+  &:checked::after {
+    border-color: var(--fg3) !important;
+  }
+}
+
+.clipboard-button {
+  display: none;
+}
+
+img,
+pre,
+.graph > .graph-outer,
+.graph > .global-graph-outer > .global-graph-container {
+  border-radius: 3px;
+}
+
+.explorer-content {
+  background: var(--bg);
+
+  * {
+    font-family: var(--bodyFont) !important;
+  }
+
+  .folder-outer > ul {
+    border-left: none;
+  }
+
+  ul li > a {
+    color: var(--fg1);
+  }
+}
+
+ul.toc-content.overflow > li > a {
+  color: var(--fg1);
+}
+
+.folder-icon {
+  color: var(--link);
+}
+
+.global-graph-outer .global-graph-container {
+  background: var(--bg2);
+}
+
+.article-title {
+  margin-bottom: 16px;
+}
+
+.page li:has(> input[type="checkbox"]:checked) {
+  text-decoration: line-through;
+  color: var(--fg2);
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+
+  img {
+    display: inline;
+    height: 40px;
+    margin: 0 6px -6px 0;
+  }
+}
+
+.center {
+  margin-bottom: 4rem;
+}

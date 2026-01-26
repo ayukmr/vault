@@ -33,6 +33,9 @@ export const TableOfContents: QuartzTransformerPlugin<Partial<Options>> = (userO
       return [
         () => {
           return async (tree: Root, file) => {
+            const i = tree.children.findIndex((t) => t.type === "heading" && t.depth === 1)
+            if (i !== -1) tree.children.splice(i, 1)
+
             const display = file.data.frontmatter?.enableToc ?? opts.showByDefault
             if (display) {
               slugAnchor.reset()
