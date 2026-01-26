@@ -92,6 +92,10 @@ ul.toc-content.overflow > li > a {
   color: var(--link);
 }
 
+.graph > .graph-outer, .global-graph-outer .global-graph-container {
+  border: 1px solid var(--fg3) !important;
+}
+
 .global-graph-outer .global-graph-container {
   background: var(--bg2);
 }
