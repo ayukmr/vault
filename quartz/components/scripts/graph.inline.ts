@@ -485,7 +485,13 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
           // if the time between mousedown and mouseup is short, we consider it a click
           if (Date.now() - dragStartTime < 500) {
             const node = graphData.nodes.find((n) => n.id === event.subject.id) as NodeData
-            const targ = resolveRelative(fullSlug, node.id)
+
+            let nodeId = node.id
+            if (nodeId.startsWith("tags/")) {
+              nodeId = nodeId.substring(5) as SimpleSlug
+            }
+
+            const targ = resolveRelative(fullSlug, nodeId)
             window.spaNavigate(new URL(targ, window.location.toString()))
           }
         }),
