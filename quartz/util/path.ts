@@ -316,3 +316,14 @@ function _addRelativeToStart(s: string): string {
 
   return s
 }
+
+export function dirname(p: SimpleSlug): SimpleSlug {
+  const stripped = stripSlashes(p)
+  const segments = stripped.split("/").filter((s) => s.length > 0)
+
+  if (segments.length <= 1) {
+    return "" as SimpleSlug
+  }
+
+  return segments.slice(0, 2).join("/") as SimpleSlug
+}

@@ -17,7 +17,7 @@ import {
 import { Text, Graphics, Application, Container, Circle } from "pixi.js"
 import { Group as TweenGroup, Tween as Tweened } from "@tweenjs/tween.js"
 import { registerEscapeHandler, removeAllChildren } from "./util"
-import { FullSlug, SimpleSlug, getFullSlug, resolveRelative, simplifySlug } from "../../util/path"
+import { FullSlug, SimpleSlug, dirname, getFullSlug, resolveRelative, simplifySlug } from "../../util/path"
 import { D3Config } from "../Graph"
 
 type GraphicsInfo = {
@@ -110,15 +110,14 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     }
 
     if (showTags) {
-      const localTags = details.tags
-        .filter((tag) => !removeTags.includes(tag))
-        .map((tag) => simplifySlug(("tags/" + tag) as FullSlug))
+      const rawTag = dirname(details.slug)
+      const tag = simplifySlug(("tags/" + rawTag) as FullSlug)
 
-      tags.push(...localTags.filter((tag) => !tags.includes(tag)))
-
-      for (const tag of localTags) {
-        links.push({ source: source, target: tag })
+      if (!removeTags.includes(rawTag) && !tags.includes(tag)) {
+        tags.push(tag)
       }
+
+      links.push({ source, target: tag })
     }
   }
 
@@ -144,7 +143,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   const nodes = [...neighbourhood].map((url) => {
-    const text = url.startsWith("tags/") ? "#" + url.substring(5) : (data.get(url)?.title ?? url)
+    const text = url.startsWith("tags/") ? url.substring(5) + "/" : (data.get(url)?.title ?? url)
     return {
       id: url,
       text,
