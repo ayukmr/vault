@@ -7,6 +7,9 @@ public
 content/**
 !content/
 !content/index.md
+!content/notes/
+!content/notes/algo/
+!content/notes/algo/**
 !content/9w/
 !content/9w/**
 !content/10w/
