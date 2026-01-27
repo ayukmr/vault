@@ -75,7 +75,7 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
               data.title = data.title.toString()
             } else {
               const title = file.value.split("\n").find((l) => l.startsWith("# "))?.slice(2)
-              data.title = title ?? file.stem ?? i18n(cfg.configuration.locale).propertyDefaults.title
+              data.title = title ?? file.stem.replaceAll("-", " ") ?? i18n(cfg.configuration.locale).propertyDefaults.title
             }
 
             const tags = coerceToArray(coalesceAliases(data, ["tags", "tag"]))
