@@ -123,3 +123,13 @@ ul.toc-content.overflow > li > a {
 .center {
   margin-bottom: 4rem;
 }
+
+@media (max-width: 800px) {
+  .explorer .mobile-explorer .lucide-menu {
+    stroke: var(--fg);
+  }
+
+  .left.sidebar {
+    background: var(--bg);
+  }
+}
