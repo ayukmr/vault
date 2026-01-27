@@ -1,4 +1,4 @@
-# Wars at the Water's Edge
+# wars at the water's edge
 
 * Indigenous had power over coasts
 * In many cases, colonizers were kept isolated and had to retreat

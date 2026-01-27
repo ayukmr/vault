@@ -1,4 +1,4 @@
-# Forced Founders
+# forced founders
 
 ## Introduction
 

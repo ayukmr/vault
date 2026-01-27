@@ -1,4 +1,4 @@
-# Follow the Corn
+# follow the corn
 
 * 12,000 years ago - people stay put and developed ag
 * 8500 BC - Domestication of plants in seven locales

@@ -1,4 +1,4 @@
-# Slavery and Freedom: The American Paradox
+# slavery and freedom
 
 * Historians interested in liberty, democracy need to consider slavery
     * Slaves made up one fifth of population, not an exception

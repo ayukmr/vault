@@ -1,3 +1,5 @@
+# sectional crisis
+
 ## IV. Free Soil, Free Labor, Free Men
 
 * "The conclusion of the Mexican War led to the 1848 Treaty of Guadalupe Hidalgo."

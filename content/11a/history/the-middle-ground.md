@@ -1,4 +1,4 @@
-# The Middle Ground - Commerce & Violence
+# the middle ground
 
 * Violence and murder correlated with commerce
 * In 1684 alone, 39 Frenchmen died at hands of Algonquian allies

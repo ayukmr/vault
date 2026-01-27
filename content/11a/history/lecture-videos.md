@@ -1,3 +1,5 @@
+# lecture videos
+
 ## [The Mexican War and the Expansion of Slavery](https://www.youtube.com/watch?v=KkgkZwQ9HgQ&list=PLSuwqsAnJMtyg3ROpOADVoW1NV5kmskFM&index=30)
 
 * slavery entered national politics to stay in mid to late 1840s-1850s

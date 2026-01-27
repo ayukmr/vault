@@ -1,3 +1,5 @@
+# advice for businessmen
+
 * Who, what, when, where, why?
     * Freeman Hunt, edited _Hunt's Merchants' Magazine_
     * 1856 in Quincy, Massachusetts
