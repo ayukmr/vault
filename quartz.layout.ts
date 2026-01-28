@@ -12,7 +12,8 @@ export const sharedPageComponents: SharedLayout = {
           depth: -1,
           scale: 0.9,
           centerForce: 0.2,
-          enableRadial: true
+          focusOnHover: true,
+          enableRadial: true,
         },
       }),
       condition: (page) => page.fileData.slug === "index",

@@ -218,10 +218,8 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   // calculate color
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug
-    if (isCurrent) {
+    if (isCurrent || d.id.startsWith("tags/")) {
       return computedStyleMap["--link"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
-      return computedStyleMap["--link2"]
     } else {
       return computedStyleMap["--fg2"]
     }
