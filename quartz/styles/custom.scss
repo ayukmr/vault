@@ -75,6 +75,13 @@ pre,
     font-family: var(--bodyFont) !important;
   }
 
+  .folder-button {
+    padding: 1px 0;
+    margin: 0;
+    background: transparent !important;
+    color: var(--link);
+  }
+
   .folder-outer > ul {
     border-left: none;
   }

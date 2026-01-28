@@ -26,7 +26,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.ConditionalRender({ component: Component.Darkmode(), condition: () => false }),
-    Component.Explorer(),
+    Component.Explorer({ folderClickBehavior: "collapse" }),
   ],
   right: [
     Component.DesktopOnly(Component.Graph()),
