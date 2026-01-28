@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+git init tmp
+cd tmp
+
+git remote add origin https://github.com/ayukmr/vault
+git fetch origin "$RENDER_GIT_COMMIT"
+git checkout FETCH_HEAD
+
+cd ..
+mv tmp/.git .
+rm -rf tmp
+
+yarn quartz build
