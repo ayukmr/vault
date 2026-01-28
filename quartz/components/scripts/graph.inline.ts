@@ -170,8 +170,27 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     .force("link", forceLink(graphData.links).distance(linkDistance))
     .force("collide", forceCollide<NodeData>((n) => nodeRadius(n)).iterations(3))
 
-  const radius = (Math.min(width, height) / 2) * 0.8
-  if (enableRadial) simulation.force("radial", forceRadial(radius).strength(0.2))
+  if (enableRadial) {
+    const radius = (Math.min(width, height) / 2) * 0.8
+
+    simulation.force(
+      "radial",
+      forceRadial((d: NodeData) => {
+        if (d.id.startsWith("tags/")) {
+          return radius * 0.4
+        }
+
+        const degree = graphData.links.filter(
+          (l) => l.source.id === d.id || l.target.id === d.id
+        ).length
+
+        const mn = radius * 0.2
+        const mx = radius * 0.85
+
+        return Math.min(mx, mn + Math.sqrt(degree) * 16)
+      }).strength(0.25)
+    )
+  }
 
   // precompute style prop strings as pixi doesn't support css variables
   const cssVars = [

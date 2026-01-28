@@ -129,6 +129,24 @@ ul.toc-content.overflow > li > a {
 
 .center {
   margin-bottom: 4rem;
+
+  .graph h3 {
+    display: none;
+  }
+
+  .graph-outer, .graph-container {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .right.sidebar .recent-notes {
+    margin-top: calc(42.2px + 1.2rem);
+
+    h3 {
+      margin-top: 0;
+    }
+  }
 }
 
 @media (max-width: 800px) {

@@ -7,7 +7,14 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   afterBody: [
     Component.ConditionalRender({
-      component: Component.RecentNotes({ limit: 5, showTags: false }),
+      component: Component.Graph({
+        localGraph: {
+          depth: -1,
+          scale: 0.9,
+          centerForce: 0.2,
+          enableRadial: true
+        },
+      }),
       condition: (page) => page.fileData.slug === "index",
     }),
   ],
@@ -29,7 +36,18 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer({ folderClickBehavior: "collapse" }),
   ],
   right: [
-    Component.DesktopOnly(Component.Graph()),
+    Component.DesktopOnly(
+      Component.ConditionalRender({
+        component: Component.Graph(),
+        condition: (page) => page.fileData.slug !== "index",
+      }),
+    ),
+    Component.DesktopOnly(
+      Component.ConditionalRender({
+        component: Component.RecentNotes({ limit: 5, showTags: false }),
+        condition: (page) => page.fileData.slug === "index",
+      }),
+    ),
     Component.DesktopOnly(Component.TableOfContents()),
   ],
 }
