@@ -39,7 +39,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.DesktopOnly(
       Component.ConditionalRender({
-        component: Component.Graph(),
+        component: Component.Graph({ localGraph: { showTags: false } }),
         condition: (page) => page.fileData.slug !== "index",
       }),
     ),
