@@ -1,4 +1,8 @@
-# taylor series problems
+# taylor series
+
+$f(a) + f'(a) (x - a) + \frac{f''(a)}{2!} (x - a)^2 + \dots + \frac{f^n(a)}{n!} (x - a)^n$
+
+## problems
 
 first, second taylors for $\sqrt{x}$ at $x = 4$
 
