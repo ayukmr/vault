@@ -5,7 +5,7 @@ then want to extend approx to $t = 2\epsilon$
 
 ---
 
-first method is iterating linear approxs 
+first method is iterating linear approxs
 i.e. assuming that $b$ and $m$ values also need to be approxed
 
 using $f_1(2 \epsilon) = f(\epsilon) + f'(\epsilon) \epsilon$
