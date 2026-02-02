@@ -1,4 +1,4 @@
-# union find / disjoint sets union
+# union find/disjoint sets union
 
 e.g. friends form alliances, alliances are mutual, need to query if $X$ and $Y$ are allied
 
