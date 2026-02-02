@@ -1,4 +1,4 @@
-# binary indexed tree
+# binary indexed tree / fenwick tree
 
 fast range sum queries while also being able to modify elements
 
