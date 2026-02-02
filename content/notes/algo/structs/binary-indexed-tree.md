@@ -1,132 +1,44 @@
-# segment tree
+# binary indexed tree
 
-tree with array nodes on the bottom level with hierarchy of nodes containing information built on top. e.g. for sums, layer $0$ is array, layer $1$ is sum of every two elements, layer $2$ is sum of every two elements from layer $1$, etc.
-
-nodes are stored in a flat array, where parent of $k$ is $\lfloor k/2 \rfloor$ and children are $2k$ and $2k + 1$. therefore, if position of node is even it is a left child, and odd means a right child.
-
-* with some range from $a$ to $b$, start by adding $n$ to get indexes (since adding $n$ moves to the base array indexes within the full node array)
-* if $a$ is odd, its parent will include something outside of the range (since odd means right child, and the parent also includes the left child)
-* if $b$ is even, same concept applies, but parent will include right child which is outside of the range
-* continually divide both $a$ and $b$ by $2$ to get to their parents (based on $\lfloor k/2 \rfloor$)
-
-## v1 (iterative)
+fast range sum queries while also being able to modify elements
 
 ```cpp
-template <typename T, typename Combine>
-class SegmentTree {
+class BIT {
 private:
-    T ident;
     int len;
-    vector<T> st;
-    Combine combine;
-
-    int next_pow2(int len) {
-        len--;
-        len |= len >> 1;
-        len |= len >> 2;
-        len |= len >> 4;
-        len |= len >> 8;
-        len |= len >> 16;
-        return len + 1;
-    }
-
-    void build(const vector<T> &arr) {
-        copy(arr.begin(), arr.end(), st.begin() + len);
-        for (int i = len - 1; i >= 1; i--) {
-            st[i] = combine(st[i * 2], st[i * 2 + 1]);
-        }
-    }
+    vector<int> arr;
+    vector<int> bit;
 
 public:
-    SegmentTree(const vector<T> &arr, T ident, Combine combine)
-        : ident(ident),
-          len(next_pow2(arr.size())),
-          st(len * 2, ident),
-          combine(combine) {
-        build(arr);
-    }
+    BIT(int n) : len(n), arr(n, 0), bit(n + 1, 0) {}
 
-    void set(int i, T x) {
-        i += len;
-        st[i] = x;
-        for (i /= 2; i >= 1; i /= 2) {
-            st[i] = combine(st[i * 2], st[i * 2 + 1]);
+    BIT(const vector<int> &arr) : len(arr.size()), arr(len), bit(len + 1) {
+        for (int i = 0; i < len; i++) {
+            set(i, arr[i]);
         }
     }
 
-    T range(int l, int r) {
-        l += len;
-        r += len;
+    void set(int i, int x) {
+        add(i, x - arr[i]);
+    }
 
-        T s = ident;
-        while (l <= r) {
-            if (l % 2 == 1) s = combine(s, st[l++]);
-            if (r % 2 == 0) s = combine(s, st[r--]);
-            l /= 2;
-            r /= 2;
+    void add(int i, int d) {
+        arr[i] += d;
+        for (i++; i <= len; i += i & -i) {
+            bit[i] += d;
+        }
+    }
+
+    int pref_sum(int i) {
+        int s = 0;
+        for (i++; i > 0; i -= i & -i) {
+            s += bit[i];
         }
         return s;
     }
-};
-```
 
-## recursive (v2, for [lazy](../plat/lazy-segment-tree))
-
-```cpp
-template <typename T, typename Combine>
-class SegmentTree {
-private:
-    T ident;
-    int len;
-    vector<T> st;
-    Combine combine;
-
-    void build(const vector<T> &arr, int v, int tl, int tr) {
-        if (tl == tr) {
-            st[v] = arr[tl];
-            return;
-        }
-        int tm = (tl + tr) / 2;
-        build(arr, v * 2, tl, tm);
-        build(arr, v * 2 + 1, tm + 1, tr);
-        st[v] = combine(st[v * 2], st[v * 2 + 1]);
-    }
-
-    void update(int i, T x, int v, int tl, int tr) {
-        if (tl == tr) {
-            st[v] = x;
-            return;
-        }
-        int tm = (tl + tr) / 2;
-        if (i <= tm) update(i, x, v * 2, tl, tm);
-        else update(i, x, v * 2 + 1, tm + 1, tr);
-        st[v] = combine(st[v * 2], st[v * 2 + 1]);
-    }
-
-    T range(int l, int r, int v, int tl, int tr) {
-        if (tr < l || tl > r) return ident;
-        if (l <= tl && r >= tr) return st[v];
-        int tm = (tl + tr) / 2;
-        T left = range(l, r, v * 2, tl, tm);
-        T right = range(l, r, v * 2 + 1, tm + 1, tr);
-        return combine(left, right);
-    }
-
-public:
-    SegmentTree(const vector<T> &arr, T ident, Combine combine)
-        : ident(ident),
-          len(arr.size()),
-          st(len * 4, ident),
-          combine(combine) {
-        build(arr, 1, 0, len - 1);
-    }
-
-    void set(int i, T x) {
-        update(i, x, 1, 0, len - 1);
-    }
-
-    T range(int l, int r) {
-        return range(l, r, 1, 0, len - 1);
+    int range(int a, int b) {
+        return pref_sum(b) - (a > 0 ? pref_sum(a - 1) : 0);
     }
 };
 ```
