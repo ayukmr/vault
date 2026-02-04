@@ -9,8 +9,8 @@ first method is iterating linear approxs
 i.e. assuming that $b$ and $m$ values also need to be approxed
 
 using $f_1(2 \epsilon) = f(\epsilon) + f'(\epsilon) \epsilon$
-$f(\epsilon)$ can be derived from $f_1(\epsilon) = f(0) + f'(0) \epsilon$
-$f'(\epsilon)$ can be linear approxed itself as $f'(\epsilon) = f'(0) + f''(0) \epsilon$
+$f(\epsilon)$ can be derived from $f(0) + f'(0) \epsilon$
+$f'(\epsilon)$ can be linear approxed itself as $f'(0) + f''(0) \epsilon$
 
 substituting, $f_1(2 \epsilon) = f(0) + f'(0) \epsilon + (f'(0) + f''(0) \epsilon) \epsilon$
 which gives $f_1(2 \epsilon) = f(0) + 2f'(0) \epsilon + f''(0) \epsilon^2$
@@ -20,7 +20,7 @@ which gives $f_1(2 \epsilon) = f(0) + 2f'(0) \epsilon + f''(0) \epsilon^2$
 second method is by using quadratic approx directly
 
 from taylor, $f_2(x) = f(0) + f'(0) x + \frac{f''(0)}{2!} x^2$
-simplifying, $f_2(2 \epsilon) = f(0) + 2f'(0)\epsilon + 2f''(0)\epsilon^2$
+applying, $f_2(2 \epsilon) = f(0) + 2f'(0)\epsilon + 2f''(0)\epsilon^2$
 
 ---
 

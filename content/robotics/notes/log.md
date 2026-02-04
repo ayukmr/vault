@@ -1,5 +1,13 @@
 # programming log
 
+## 2/2
+
+* tried to get motor-based pid working (unsuccessful)
+* updated motor-pidf/pose-estimator and some constants
+
+todo
+* probably going to use pose estimator w/ old system?
+
 ## 1/29
 
 * tried fixes from james tsudica, inventor of navx
