@@ -1,4 +1,4 @@
-# the conquest west
+# conquest west
 
 ## the wild west (mid-late 1800s)
 

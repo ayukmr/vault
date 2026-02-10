@@ -55,7 +55,7 @@
 
 * 10k arrived in 1850s-1860s drawn by gold rush
 * intended to earn money and return to china
-*  post-civil war economic anxiety (1870s)
+* post-civil war economic anxiety (1870s)
     * end of the gold rush, economic downturn increased job competition
     * workers scapegoated for unemployment, low wages
 * chinese exclusion act (1882), banned chinese labor immigration

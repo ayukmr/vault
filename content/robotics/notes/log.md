@@ -1,5 +1,38 @@
 # programming log
 
+## 2/9
+
+* taught rookies vision (mostly cv)
+* maybe some pose estimator stuff?
+
+todo
+* pose estimator
+
+## 2/8
+
+* worked on auton
+
+todo
+* 90deg rotations are more like 70deg
+
+## 2/6
+
+* field diagram shown on elastic
+* got pose estimator working with vision
+
+## 2/5
+
+* other people got elastic notifications working!
+
+## 2/4
+
+* rookies worked on finishing angles in intake subsystem
+* continued work on pose estimator, pos/angle work
+
+todo
+* run intake subsystem on swerve
+* finish vision integration with pose estimator
+
 ## 2/2
 
 * tried to get motor-based pid working (unsuccessful)
