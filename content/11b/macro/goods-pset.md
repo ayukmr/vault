@@ -8,7 +8,7 @@
 
 4/ same as 2/
 
-5/ increasing budget deficit by 10%, deficit is $D = G - T$. by $Y = \frac{1}{1 - c_1}[c_0 + \bar I + G - c_1 T]$, $\Delta Y = \frac{1}{1 - c_1}[\Delta G] - \frac{1}{1 - c_1}[c_1 \Delta T]$. but the _percentage_ change of $Y$ is dependent on the old $Y$—so even though $\Delta Y$ can end up being larger than $\Delta D$ because of the multipliers (when $G$ is shifting), it doesn't prove that the percentage change of $Y$ is $> 10\%$.
+5/ false. increasing budget deficit by 10%, deficit is $D = G - T$. by $Y = \frac{1}{1 - c_1}[c_0 + \bar I + G - c_1 T]$, $\Delta Y = \frac{1}{1 - c_1}[\Delta G] - \frac{1}{1 - c_1}[c_1 \Delta T]$. but the _percentage_ change of $Y$ is dependent on the old $Y$—so even though $\Delta Y$ can end up being larger than $\Delta D$ because of the multipliers (when $G$ is shifting), it doesn't prove that the percentage change of $Y$ is $> 10\%$.
 
 6a/ 
 * $Y = \text{€150 B}$
