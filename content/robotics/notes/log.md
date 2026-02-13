@@ -1,5 +1,10 @@
 # programming log
 
+## 2/11
+
+* made vision faster (~55fps -> ~75fps)
+* postponed pose estimator
+
 ## 2/9
 
 * taught rookies vision (mostly cv)

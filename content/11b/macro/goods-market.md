@@ -14,13 +14,15 @@
 
 * consumption is based on disposable income, $Y_D$
 * $C = c_0 + c_1(Y_D)$, $c_1$ is 'marginal propensity to consume'
-    * effect an additional europe has on consumption
+    * effect an additional euro has on consumption
+    * $0 < c_1 < 1$
 * $Y_D \equiv Y - T$, income minus taxes ($C = c_0 + c_1(Y - T)$)
 
 ## investment
 
 * endogenous -> derived, exogenous -> given
 * $I = \bar I$ (given)
+* or $I = S + T - G$
 
 ## government spending
 
@@ -46,18 +48,19 @@
 
 ### following
 
-* first-round increase in demand moves $A$ up to $B$, $\text{€1 billion}$ distance
+* first-round increase in demand moves $A$ up to $B$, $\text{€1 B}$ distance
 * first-round increase in demand leads to equal increase in production, also shown by $A$ up to $B$ with same distance
-* first-round increase in production leads to equal increase in income, $B$ right to $C$ by $\text{€1 billion}$
-* second-round increase in demand moves $C$ up to $D$, distance is $c_1 \times \text{€1 billion}$
+* first-round increase in production leads to equal increase in income, $B$ right to $C$ by $\text{€1 B}$
+* second-round increase in demand moves $C$ up to $D$, distance is $c_1 \times \text{€1 B}$
 * second-round income in demand leads to equal increase in production, by $C$ up to $D$, and then increase in income, right from $D$ to $E$
-* third-round increase in demand is $c_1 \times c_1 \times \text{€1 billion}$
-* geometric series as $1 + c_1 + c_1^2 + \dots + c_1^n$, approaches $\text{€1}/(1 - c_1) \text{ billion}$ sum
+* third-round increase in demand is $c_1 \times c_1 \times \text{€1 B}$
+* geometric series as $1 + c_1 + c_1^2 + \dots + c_1^n$, approaches $\text{€1}/(1 - c_1) \text{ B}$ sum
 
 ## saving
 
 * private saving ($S$), saving by consumers, disposable income minus consumption, $S = Y_D - C$
 * in terms of income and taxes, $S = Y - T - C$
+    * public savings are $T - G$, positive is surplus, negative is deficit
 * $Y = C + \bar I + G$ -> $Y - T - C = \bar I + G - T$ -> $S = \bar I + G - T$
 * equilibrium is $\text{production = demand}$ or $\text{investment = saving}$
 
