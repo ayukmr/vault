@@ -1,4 +1,4 @@
-# goods problem set
+# goods market problem set
 
 1/ false, the economy with the higher $c_1$ will have a higher drop. this is because of $c_1(Y - T)$, meaning $T$ is scaled by $c_1$, and thus is larger if $c_1$ is higher.
 
