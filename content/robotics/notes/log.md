@@ -1,5 +1,13 @@
 # programming log
 
+## 2/13
+
+* got pathplanner relative -> field positions somewhat working
+    * basically .plus was doing more than just adding x and y, so replaced it with that
+
+todo
+* the starting position doesn't update properly when running it twice
+
 ## 2/11
 
 * made vision faster (~55fps -> ~75fps)
