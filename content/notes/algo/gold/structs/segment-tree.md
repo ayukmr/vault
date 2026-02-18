@@ -1,5 +1,7 @@
 # segment tree
 
+similar to [bit](binary-indexed-tree), but supports $\min$, $\gcd$ etc.
+
 tree with array nodes on the bottom level with hierarchy of nodes containing information built on top. e.g. for sums, layer $0$ is array, layer $1$ is sum of every two elements, layer $2$ is sum of every two elements from layer $1$, etc.
 
 nodes are stored in a flat array, where parent of $k$ is $\lfloor k/2 \rfloor$ and children are $2k$ and $2k + 1$. therefore, if position of node is even it is a left child, and odd means a right child.
@@ -70,7 +72,7 @@ public:
 };
 ```
 
-## recursive (v2, for [lazy](../plat/lazy-segment-tree))
+## recursive (v2, for [lazy](../../plat/structs/lazy-segment-tree))
 
 ```cpp
 template <typename T, typename Combine>

@@ -1,5 +1,14 @@
 # programming log
 
+## 2/14
+
+* got pathplanner auton working correctly!!
+* also added some stuff to elastic for better debugging
+
+todo
+* fix robot position from tags
+* figure out the initial vision slowdown
+
 ## 2/13
 
 * got pathplanner relative -> field positions somewhat working

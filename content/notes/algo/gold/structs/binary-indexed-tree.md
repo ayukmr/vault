@@ -1,6 +1,7 @@
 # binary indexed tree/fenwick tree
 
 fast range sum queries while also being able to modify elements
+similar to [segtree](segment-tree) but can only do sums etc.
 
 ```cpp
 class BIT {
