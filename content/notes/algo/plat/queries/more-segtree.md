@@ -17,22 +17,20 @@
 * convert to bits; 1 for has $i$, 0 for no $i$
 
 ```cpp
-int kth(int k) {
-    int v = 1;
+int v = 1;
 
-    if (st[v] < k) return -1;
+if (st[v] < k) return -1;
 
-    while (v < len) {
-        if (st[v * 2] >= k) {
-            v = v * 2;
-        } else {
-            k -= st[v * 2];
-            v = v * 2 + 1;
-        }
+while (v < len) {
+    if (st[v * 2] >= k) {
+        v = v * 2;
+    } else {
+        k -= st[v * 2];
+        v = v * 2 + 1;
     }
-
-    return v - len;
 }
+
+return v - len;
 ```
 
 ## contiguous blocks
