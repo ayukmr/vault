@@ -23,11 +23,17 @@ solve for $n$ for $M$?
 
 $\sum^\infty_{n = 1} \frac{\sqrt{n + 1} - \sqrt{n - 1}}{2}$
 
-$\frac{\sqrt{2} - \sqrt{1}}{2}, \frac{\sqrt{3} - \sqrt{2}}{2}, \frac{\sqrt{4} - \sqrt{3}}{2}, \frac{\sqrt{5} - \sqrt{4}}{2}$
-$0.207, 0.366, 0.5, 0.618$
+$\frac{\sqrt{2} - \sqrt{0}}{2}, \frac{\sqrt{3} - \sqrt{1}}{2}, \frac{\sqrt{4} - \sqrt{2}}{2}, \frac{\sqrt{5} - \sqrt{3}}{2}$
+partials: $0.707, 1.073, 1.366, 1.618$
 
-$\frac{1}{2}(\sum^\infty_{n = 1} \sqrt{n + 1} - \sum^\infty_{n = 1} \sqrt{n - 1})$
-...
+$\frac{1}{2}(\sum^\infty_{n = 1} \sqrt{n + 1} - \sqrt{n - 1})$
+$\frac{1}{2}[(\sqrt{2} - \sqrt{0}) + (\sqrt{3} - \sqrt{1}) + (\sqrt{4} - \sqrt{2}) + (\sqrt{5} - \sqrt{3})]$
+$\frac{1}{2}[(\sqrt{2} - \sqrt{2}) + (\sqrt{3} - \sqrt{3}) - \sqrt{0} - \sqrt{1} + \sqrt{4} + \sqrt{5}]$
+
+so $-\sqrt{1}$ (i.e. $1$), $\sqrt{4}$, $\sqrt{5}$ don't cancel
+$\sqrt{4}$ and $\sqrt{5}$ generalize to $\sqrt{N}$ and $\sqrt{N + 1}$
+so $S = lim_{n \rightarrow \infty} [-1 + \sqrt{n} + \sqrt{n + 1}] \times \frac{1}{2}$
+$S = lim_{n \rightarrow \infty}[\sqrt{n} + \sqrt{n + 1}]  \times \frac{1}{2} = \infty$
 
 ## slides
 

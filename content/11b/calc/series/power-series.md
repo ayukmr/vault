@@ -1,6 +1,6 @@
 # power series
 
-$$\sum^\infty_{n = 0} c_n (x - a)^n = c_0 + c_1(x - a) + c_2(x - a)^2 + \dots$$
+$\sum^\infty_{n = 0} c_n (x - a)^n = c_0 + c_1(x - a) + c_2(x - a)^2 + \dots$
 
 1. series converges for all $x = a$, diverges for all $x \ne a$
 2. series converges for all real numbers $x$
