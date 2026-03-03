@@ -1,4 +1,4 @@
-# approximating $\pi$
+# approximating π
 
 $\frac{\pi}{4} = 4tan^{-1}(\frac{1}{5}) - tan^{-1}(\frac{1}{x})$
 $tan^{-1}(\frac{1}{x}) = -\frac{\pi}{4} + 4tan^{-1}(\frac{1}{5})$

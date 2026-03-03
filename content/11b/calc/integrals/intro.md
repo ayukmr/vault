@@ -8,7 +8,7 @@ $\lim_{n \rightarrow \infty} \sum^n_{i = 1} f(a + \frac{(i - 1)(b - a)}{n}) \cdo
 height: $f(a + \frac{(i - 1)(b - a)}{n})$
 width: $\frac{(b - a)}{n}$
 
-$R_n$ is $L_n$ but starting at $i$ instead of $i - 1$
+$R_n$ is $L_n$ but ending at $i$ instead of $i - 1$
 
 $\int_a^b [f(x) + g(x)] = \int_a^b f(x) + \int_a^b g(x)$
 $\int_a^b c f(x) = c \int_a^b f(x)$

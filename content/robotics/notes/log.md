@@ -1,5 +1,14 @@
 # programming log
 
+## 2/26
+
+* set up the emergency pigeon!!
+
+## 2/25
+
+* added operator bindings for intake and shooter
+* more misc navx debugging
+
 ## 2/14
 
 * got pathplanner auton working correctly!!
