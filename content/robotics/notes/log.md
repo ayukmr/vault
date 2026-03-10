@@ -1,5 +1,49 @@
 # programming log
 
+## 3/9
+
+* actually tuned shoot from distance
+* got absolute pathplanner auton working
+    * pigeon drift??
+* tuned climber pid
+
+## 3/8
+
+* fixing pose estimator for realz
+* debugging hot stuff
+* turn towards hub
+* allegedly shoot from distance (not really)
+
+## 3/6
+
+* i don’t remember but there were these todos
+* [ ] shooter vision
+* [ ] climber pid
+* [ ] auton
+
+## 3/5
+
+* [x] intake pid
+    * [x] async: final pi setup
+
+## 3/4
+
+* added bindings for a ps4 controller
+* got indexer working and did some testing
+* got shooter pid working
+    * swapped from motor-based pid to normal wpilib pid
+
+todo
+* intake extend/retract pid
+
+## 3/2
+
+* some vision service stuff
+* started testing shooter
+
+todo
+* shooter pid
+
 ## 2/26
 
 * set up the emergency pigeon!!

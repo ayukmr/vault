@@ -37,3 +37,19 @@ so $L = R$, since $L - R = 0$
 range is from $-2$ to $2$, meaning range is $4$
 using $\Delta x > 4$ means 'width' will exceed range
 so $0 < \Delta x \le 4$ for having true area bounded between $L$ and $R$
+
+---
+
+for each, $|L - R| < 0.5 \cdot 10^{-3}$
+
+4)
+
+$f(x) = \int_0^{1/4} \sqrt{1 - 4x^2}dx$
+
+5)
+
+$\int_{-1/2}^{3/4} \sqrt{3 - 4x - 4x^2}dx$
+
+6)
+
+$\int_0^3 \frac{x}{\sqrt{9 - x}^2} dx$

@@ -83,4 +83,12 @@
     * assume only reserves and bonds as assets
 * demand for money
     * ![](fin-markets-determinants.png)
-* 
+* what determines the demand for deposit accounts vs currency?
+    * in the equations, the $c$ vs $(1 - c)$ factors, where $c$ is towards demand for currency
+* what determines the demand for reserves by banks?
+    * based on the amount required by the country, e.g. 2%, and $(1 - c)$, the demand for deposit accounts
+* what determines the demand for central bank money?
+    * based on a negative relationship with a function $L$ of interest $i$
+* how does the condition that demand/supply of central money be equal determine interest rate
+    * the demand is through $M_d = \$YL(i)$, so if $M_d$ and $Y$ are set, $i$ has to follow through $L(i)$
+    
