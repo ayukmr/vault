@@ -1,5 +1,9 @@
 # programming log
 
+## 3/10
+
+* got climb auton path working
+
 ## 3/9
 
 * actually tuned shoot from distance

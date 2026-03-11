@@ -1,4 +1,4 @@
-# financial markets
+# money market
 
 ## demand
 
@@ -82,7 +82,7 @@
     * bonds/loans are approximately equivalent in the model
     * assume only reserves and bonds as assets
 * demand for money
-    * ![](fin-markets-determinants.png)
+    * ![](money-determinants.png)
 * what determines the demand for deposit accounts vs currency?
     * in the equations, the $c$ vs $(1 - c)$ factors, where $c$ is towards demand for currency
 * what determines the demand for reserves by banks?
