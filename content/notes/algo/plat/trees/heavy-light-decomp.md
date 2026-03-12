@@ -13,7 +13,7 @@ efficient path range queries with point updates on a tree
 * indexing with a dfs, first visit heavy childs, meaning heavy path indexes will be contiguous
 * build a [segtree](../../gold/structs/segment-tree) on the indexes, meaning heavy path queries can be done in $\log n$ (giving the other part of the $\mathcal{O}(\log^2n)$)
 
-* trying to range query path from $a$ to $b$ can be split using [lca](../trees/least-common-ancestor), giving $a \rightarrow z$ and $b \rightarrow z$ as the ranges to find
+* trying to range query path from $a$ to $b$ can be split using [lca](../../gold/trees/least-common-ancestor), giving $a \rightarrow z$ and $b \rightarrow z$ as the ranges to find
 * when going from node $u$ to $z$, use segtree range queries to compute value
 * add $range(pos(head[u]), pos(u))$, jump to $parent[head[u]]$, repeat until reaching $z$
 
