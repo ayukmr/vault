@@ -10,6 +10,9 @@ content/**
 !content/notes/
 !content/notes/algo/
 !content/notes/algo/**
+!content/writing/
+!content/writing/projects/
+!content/writing/projects/**
 !content/9w/
 !content/9w/**
 !content/10w/
