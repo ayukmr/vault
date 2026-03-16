@@ -9,7 +9,7 @@
 * atms allow for holding cash in a accessible place rather than needing to keep on hand, so overall demand for money for each person goes down, so $M_d$ goes down. for people to get rid of money for $M$ to reach $M_d$, they buy bonds which increases demand for bonds which decreases $i$, which by relationship $\downarrow M \Rightarrow \downarrow i$. so, investment part of it is incorrect.
 
 3/ false.
-* $T$ increases, so in $Z = c_0 + c_1(Y - T) + \bar{I} + G$, $Y$ would have to decrease to keep equilibrium with $Z$ constant. this change in $Y$ will affect $M_d = YL(i)$, reducing $M_d$ and thus making an impact.
+* $T$ increases, so in $Z = c_0 + c_1(Y - T) + \bar I + G$, $Y$ would have to decrease to keep equilibrium with $Z$ constant. this change in $Y$ will affect $M_d = YL(i)$, reducing $M_d$ and thus making an impact.
 
 4/ true.
 * contraction of gdp -> $Y$ goes down, so $M_d = YL(i)$ keeping $M_d$ same requires $\downarrow i$. central bank buying bonds -> more money but less interest -> interest goes down, so right effect
