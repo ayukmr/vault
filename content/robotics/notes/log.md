@@ -1,8 +1,54 @@
 # programming log
 
+## 3/23
+
+* started getting new intake working
+* figured out problem with prefs
+    * immediately setting a key wipes all data
+* added leds
+
+todo
+* test custom storage
+* test climb auton
+
+## 3/22
+
+* (fab) made shooter a bit more horizontal
+* verified shooting at different distances
+* made climber faster
+
+## 3/20
+
+* fixed pigeon imu
+    * added rotation constant to fix drift
+* reflashed rio firmware
+
+## 3/16
+
+* set up advantagekit logging
+* some other misc stuff surely
+
+## 3/15
+
+* creativity award!!
+
+todo
+* something with the pigeon
+
+## 3/14
+
+* fixed climb auton
+    * requirements caused sequential group to cancel itself
+* tuned shooter to new angle
+* optimized hopper roller speeds
+
+## 3/13
+
+* general testing and tuning in practice matches
+
 ## 3/11
 
-* 
+* driver training and further tuning
 
 ## 3/10
 
@@ -17,22 +63,24 @@
 
 ## 3/8
 
-* fixing pose estimator for realz
-* debugging hot stuff
+* fixing pose estimator for real
+* debugging overheating stuff
 * turn towards hub
 * allegedly shoot from distance (not really)
 
 ## 3/6
 
-* i don’t remember but there were these todos
-* [ ] shooter vision
-* [ ] climber pid
-* [ ] auton
+* i don’t remember but there were some todos
+
+todo
+* shooter vision
+* climber pid
+* auton
 
 ## 3/5
 
-* [x] intake pid
-    * [x] async: final pi setup
+* got intake pid working
+* set up vision service on pi
 
 ## 3/4
 
@@ -105,7 +153,7 @@ todo
 
 ## 2/5
 
-* other people got elastic notifications working!
+* got elastic notifications working! (very important)
 
 ## 2/4
 

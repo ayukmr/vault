@@ -40,7 +40,7 @@
 
 ## open market operations
 
-* central banks change suptply of money by buying or selling bonds
+* central banks change supply of money by buying or selling bonds
 * central banks wants increase, buys bond and pays for them by creating money; if wants to decrease, sells bonds and removes from circulation money in exchange for bonds
     * called open market operations as they happen in 'open market' for bonds
     * expansionary open market operation -> expands supply of money
@@ -50,8 +50,8 @@
 
 * suppose one-year bonds with payment of $\$100$ and some price $\$P_b$; interest rate given as $i = \frac{\$100 - \$P_B}{\$P_B}$
 * price today from one-year bond paying $\$100$ year from today is $\$P_B = \frac{\$100}{1 + i}$ 
-* central bank buys bonds -> demand for bonds goes up -> price increases -> interest rate goes down
-* central bank sells bonds -> demand for bonds goes down -> price decreases -> interest rate goes up
+* central bank buys bonds -> supply of bonds decreases (less fulfilled demand) -> price increases -> interest rate goes down
+* central bank sells bonds -> supply of bonds increases (more fulfilled demand) -> price decreases -> interest rate goes up
 
 ## liquidity trap
 
