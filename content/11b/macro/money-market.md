@@ -21,7 +21,7 @@
 
 * $M^d$: amount of money people want to hold
 * if nominal income increase, transactions increase proportional, $M^d$ increase proportional
-* $M^d = €YL(i)$
+* $M^d = \text{€}YL(i)$
 * based on some function of interest rate, $L(i)$
 * $M^d$ has negative relationship with $i$
 
@@ -33,8 +33,8 @@
 
 * suppose central bank decides to supply money equal to $M$, thus $M^s = M$, $s$ for supply
 * equilibrium requires money supply equals demand, that $M^s = M^d$
-    * so $\text{Money supply} = \text{Money demand}$ and $M^s = €YL(i)$
-    * shows that $i$ must be such that for given income $€Y$ people must be willing to hold money equal to existing money supply $M^s$; called the $LM$ relationship
+    * so $\text{Money supply} = \text{Money demand}$ and $M^s = \text{€}YL(i)$
+    * shows that $i$ must be such that for given income $\text{€}Y$ people must be willing to hold money equal to existing money supply $M^s$; called the $LM$ relationship
     * i.e. increase to supply of money by central bank leads to decrease in interest rate
         * decrease in interest rate leads to increased demand for money, so it equals increased money supply
 
@@ -48,8 +48,8 @@
 
 ## bond prices and yields
 
-* suppose one-year bonds with payment of $€100$ and some price $€P_b$; interest rate given as $i = \frac{€100 - €P_B}{€P_B}$
-* price today from one-year bond paying $€100$ year from today is $€P_B = \frac{€100}{1 + i}$ 
+* suppose one-year bonds with payment of $\text{€}100$ and some price $\text{€}P_b$; interest rate given as $i = \frac{\text{€}100 - \text{€}P_B}{\text{€}P_B}$
+* price today from one-year bond paying $\text{€}100$ year from today is $\text{€}P_B = \frac{\text{€}100}{1 + i}$ 
 * central bank buys bonds -> supply of bonds decreases (less fulfilled demand) -> price increases -> interest rate goes down
 * central bank sells bonds -> supply of bonds increases (more fulfilled demand) -> price decreases -> interest rate goes up
 
@@ -90,5 +90,5 @@
 * what determines the demand for central bank money?
     * based on a negative relationship with a function $L$ of interest $i$
 * how does the condition that demand/supply of central money be equal determine interest rate
-    * the demand is through $M_d = €YL(i)$, so if $M_d$ and $Y$ are set, $i$ has to follow through $L(i)$
+    * the demand is through $M_d = \text{€}YL(i)$, so if $M_d$ and $Y$ are set, $i$ has to follow through $L(i)$
     
