@@ -192,28 +192,19 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     )
   }
 
-  // precompute style prop strings as pixi doesn't support css variables
-  const cssVars = [
-    "--link",
-    "--link2",
-    "--fg",
-    "--fg2",
-    "--fg3",
-    "--bg",
-    "--bg2",
-    "--bg3",
-    "--bg4",
-    "--bg5",
-    "--caret",
-    "--bodyFont",
-  ] as const
-  const computedStyleMap = cssVars.reduce(
-    (acc, key) => {
-      acc[key] = getComputedStyle(document.documentElement).getPropertyValue(key)
-      return acc
-    },
-    {} as Record<(typeof cssVars)[number], string>,
-  )
+  const computedStyleMap = {
+      "--link": "#5599ff",
+      "--link2": "#4080e0",
+      "--fg": "#dddddd",
+      "--fg2": "#888888",
+      "--fg3": "#3a3a3a",
+      "--bg": "#121212",
+      "--bg2": "#151515",
+      "--bg3": "#1a1a1a",
+      "--bg4": "#1f1f1f",
+      "--bg5": "#272727",
+      "--bodyFont": "'IBM Plex Sans', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+  }
 
   // calculate color
   const color = (d: NodeData) => {
