@@ -1,3 +1,5 @@
+# u substitution problems
+
 $\int_{-1}^4 x(x^2 - 3)^5 dx$
 $\int_{-1}^4 xu^5 dx$
 
