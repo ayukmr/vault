@@ -42,7 +42,7 @@
 
 ### solving
 
-* $Y = c_0 + c_1(Y - T) + \bar I + G$ -> $Y = \frac{1}{1 - c_1}[c_0 + \bar I + G - c_1 T]$
+* $Y = c_0 + c_1(Y - T) + \bar I + G$ -> $Y = \frac{1}{1 - c_1}(c_0 + \bar I + G - c_1 T)$
 * $c_0 + \bar I + G - c_1 T$ is autonomous spending, demand that does not depend on output
 * $\frac{1}{1 - c_1}$ is multiplier, increases as $c_1$ approaches $1$, also $\frac{\Delta I}{\Delta G}$
 

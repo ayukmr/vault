@@ -1,5 +1,49 @@
 # programming log
 
+## 4/4
+
+* broke shoot + climb into two paths
+* added command to outtake fuel through intake
+
+## 4/3
+
+* random tuning, etc.
+
+## 4/2
+
+* the worst practice match ever bc of the pigeon dying
+* electronics hopefully fixed pigeon using thicker wires??
+
+todo
+* vision offset jank
+
+## 4/1
+
+* fixed intake wobble
+* shooter leds!!
+* vision websocket stuff
+* added brick mode
+
+## 3/30
+
+* added vision + robot stuff for using two cameras
+
+## 3/29
+
+* got single dip auton working
+
+## 3/27
+
+* continued work on autons?
+
+## 3/26
+
+* fixed some stuff (intake encoder and climb auton)?
+
+## 3/25
+
+* tried to get preferences working (unsuccessful)
+
 ## 3/23
 
 * started getting new intake working

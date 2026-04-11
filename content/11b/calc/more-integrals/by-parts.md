@@ -1,8 +1,8 @@
 # integration by parts
 
-$\int (f \cdot g)' dx$
-$= \int (f' \cdot g)dx + \int (f \cdot g') dx$
+$\int (f \times g)' dx$
+$= \int (f' \times g)dx + \int (f \times g') dx$
 
-$f \cdot g$
-$= \int f' \cdot g dx + \int f \cdot g' dx$
-$\Rightarrow \int f \cdot g' dx = f \cdot g - \int f' \cdot gdx$
+$f \times g$
+$= \int f' \times g dx + \int f \times g' dx$
+$\Rightarrow \int f \times g' dx = f \times g - \int f' \times gdx$
