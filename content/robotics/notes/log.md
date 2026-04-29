@@ -1,5 +1,12 @@
 # programming log
 
+## 4/13
+
+* roboticsteam4904 -> frc4904
+* 2026-code -> 2026
+* removed org.usfirst.frc4904
+* standard -> lib
+
 ## 4/4
 
 * broke shoot + climb into two paths
