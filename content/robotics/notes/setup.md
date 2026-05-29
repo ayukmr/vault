@@ -19,7 +19,7 @@ export DYLD_LIBRARY_PATH="$LIBCLANG_PATH:$DYLD_LIBRARY_PATH"
 ### for pi
 
 ```sh
-$ limactl create --name=default template://ubuntu
+$ limactl create --name=default --arch=x86_64 template://ubuntu
 ```
 
 `lima.yaml`
