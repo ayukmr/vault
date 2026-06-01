@@ -28,8 +28,10 @@ content/**
 !content/11b/calc/
 !content/11b/history/
 !content/11b/macro/
+!content/11b/macro/china
 !content/11b/modern/
 !content/11b/calc/**
 !content/11b/history/*
 !content/11b/macro/*
+!content/11b/macro/china/*
 !content/11b/modern/*
