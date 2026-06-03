@@ -53,12 +53,12 @@
 * increase in government spending leads to increase in output, increase in interest rate, real appreciation
 ![[open-economy-5.png|400]]
 
-* monetary contraction causes causes appreciation as A shifts up to A'
+* monetary contraction causes appreciation as A shifts up to A'
 ![[open-economy-6.png|400]]
 
-* under fixed exchange rate, domestic interest rate equals foreign interest rate, causes necessary monetary accomodation to hold $i$
+* under fixed exchange rate, domestic interest rate equals foreign interest rate, causes necessary monetary accommodation to hold $i$
 ![[open-economy-7.png|400]]
 
 * monetary expansion causes $LM$ down, $Y$ up, $i$ down, depreciation, $NX$ improves
     * helps both $Y$ and $NX$
-* fiscal policy more powerful under fixed $E$, forced monetary accomodation
+* fiscal policy more powerful under fixed $E$, forced monetary accommodation
