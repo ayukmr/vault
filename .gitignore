@@ -7,9 +7,8 @@ public
 content/**
 !content/
 !content/index.md
-!content/notes/
-!content/notes/algo/
-!content/notes/algo/**
+!content/algo/
+!content/algo/**
 !content/writing/
 !content/writing/projects/
 !content/writing/projects/**
