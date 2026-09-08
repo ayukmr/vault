@@ -17,7 +17,7 @@ content/**
 !content/10w/
 !content/10w/**
 !content/robotics/
-!content/robotics/**
+!content/robotics/notes/
 !content/11a/
 !content/11a/history/
 !content/11a/modern/
@@ -34,3 +34,6 @@ content/**
 !content/11b/macro/*
 !content/11b/macro/china/*
 !content/11b/modern/*
+!content/12a/
+!content/12a/ba/
+!content/12a/ba/*
