@@ -192,18 +192,37 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     )
   }
 
+  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const lightMap = {
+    "--link":  "#0055ee",
+    "--link2": "#0040c0",
+    "--fg":  "#111111",
+    "--fg2": "#777777",
+    "--fg3": "#c9c9c9",
+    "--bg":  "#ffffff",
+    "--bg2": "#fbfbfb",
+    "--bg3": "#f7f7f7",
+    "--bg4": "#efefef",
+    "--bg5": "#e5e5e5",
+  }
+
+  const darkMap = {
+    "--link":  "#5599ff",
+    "--link2": "#4080e0",
+    "--fg":  "#dddddd",
+    "--fg2": "#888888",
+    "--fg3": "#3a3a3a",
+    "--bg":  "#121212",
+    "--bg2": "#151515",
+    "--bg3": "#1a1a1a",
+    "--bg4": "#1f1f1f",
+    "--bg5": "#272727",
+  };
+
   const computedStyleMap = {
-      "--link": "#5599ff",
-      "--link2": "#4080e0",
-      "--fg": "#dddddd",
-      "--fg2": "#888888",
-      "--fg3": "#3a3a3a",
-      "--bg": "#121212",
-      "--bg2": "#151515",
-      "--bg3": "#1a1a1a",
-      "--bg4": "#1f1f1f",
-      "--bg5": "#272727",
-      "--bodyFont": "'IBM Plex Sans', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+    ...(isDark ? darkMap : lightMap),
+    "--bodyFont": "'IBM Plex Sans', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
   }
 
   // calculate color
