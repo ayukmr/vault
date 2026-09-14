@@ -36,4 +36,4 @@ content/**
 !content/11b/modern/*
 !content/12a/
 !content/12a/ba/
-!content/12a/ba/*
+!content/12a/ba/**
