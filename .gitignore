@@ -37,3 +37,5 @@ content/**
 !content/12a/
 !content/12a/ba/
 !content/12a/ba/**
+!content/12a/compsec/
+!content/12a/compsec/**
