@@ -9,6 +9,10 @@
 
 a {
   text-decoration: none !important;
+
+  &.external .external-icon > path {
+    fill: var(--fg);
+  }
 }
 
 img {
