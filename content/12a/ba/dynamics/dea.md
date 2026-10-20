@@ -22,24 +22,23 @@ linprog(
         # -- non-negative prices
         # x_1, x_2, y_1, y_2 >= 0
         [-1,  0,  0,  0],
-        [0,  -1,  0,  0],
-        [0,   0, -1,  0],
-        [0,   0,  0, -1],
+        [ 0, -1,  0,  0],
+        [ 0,  0, -1,  0],
+        [ 0,  0,  0, -1],
     ],
     [0 for _ in range(n)] + [1, -1, 0, 0, 0, 0],
     bounds=[(None, None), (None, None), (None, None), (None, None)],
 )
 ```
 
-this runs for the $i$th facility. to figure out how many are relatively optimal, I calculated $R = c_i y_1 + d_i y_2$ and checked if its equal to $1$, in which case it's optimal (I used "efficient").
+this runs for the $i$th facility. to figure out how many are relatively optimal, I calculated $R = c_i y_1 + d_i y_2$ and checked if its equal to $1$, in which case it's optimal.
 
 ```python
 r = c[i] * res[2] + d[i] * res[3]
 
 if r == 1:
-    eff += 1
-else:
-    not_eff += 1
+    opt += 1
+total += 1
 ```
 
 since the problem is asking for different variations of the $c_i$ and $d_i$, I put this into a loop which keeps randomizing those parameters with different numbers of facilities.
@@ -53,7 +52,7 @@ c = [randint(1, 100) for _ in range(n)]
 d = [randint(1, 100) for _ in range(n)]
 ```
 
-after running it for a bit, the ratio of $\frac{efficient}{total}$ seemed to approach $0.38$.
+after running it for a bit, the ratio of $\frac{optimal}{total}$ seemed to approach $0.38$.
 
 ---
 
@@ -99,7 +98,7 @@ similarly, $R$ becomes a sum over the output parameters and coordinating values.
 r = sum([e[j + m][i] * res[j + m] for j in range(m)])
 ```
 
-in order to test out the different parameter counts, I looped over a range of $m$ values, which I used to mean the separate count of input/output parameters. putting the ratios I found in a spreadsheet gives this graph of $\frac{efficient}{total}$ for each param count.
+in order to test out the different parameter counts, I looped over a range of $m$ values, which I used to mean the separate count of input/output parameters. putting the ratios I found in a spreadsheet gives this graph of $\frac{optimal}{total}$ for each param count.
 
 ![[dea.png]]
 
