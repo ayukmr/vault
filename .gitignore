@@ -9,11 +9,6 @@ content/**
 !content/index.md
 !content/algo/
 !content/algo/**
-!content/writing/
-!content/writing/projects/
-!content/writing/projects/**
-!content/robotics/
-!content/robotics/notes/
 !content/11a/
 !content/11a/history/
 !content/11a/modern/
